@@ -1,0 +1,7 @@
+{
+  "name": "KumarShop Heroku App",
+  "description": "A barebones Node.js app using Express 4, Sqllite3",
+  "repository": "https://github.com/sk9331657/KumarShop",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["node", "express", "static"]
+}

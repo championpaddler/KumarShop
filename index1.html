@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kumar's Store</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmazHbgvV7QAFOFmGmSV9cQmTuHqw7O5SAgcGHPRT5544XMf-_JQ">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    .button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+
+#heart
+{
+  
+ 
+text-decoration-color:whitesmoke;
+width:100%;
+text-align: center;
+}
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+    .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay div {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+    /* Remove the navbar's de
+    fault rounded borders and increase the bottom margin */ 
+    #loading {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: block;
+   
+    background-color:white;
+    z-index: 99;
+    text-align: center;
+ }
+ 
+ #loading-image {
+     margin-top:auto;
+     width:50%;
+    margin-left: auto;
+	margin-right: auto;
+	display: block;
+   
+ }
+
+
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+    
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      text-decoration-color: white;
+       
+
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+    <script type="text/javascript" >
+      $('body').hide();
+      $('#myModal88').hide();
+      setTimeout(function(){
+      
+      
+        $("#loading").hide(); 
+        $('#myModal88').modal('show');
+      
+      
+          $('body').show();
+      }, 3000); </script>
+    <script src="loader.js"></script>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+                        <a id="Ok" href="#">Item Added</a>
+
+                        
+
+                      
+
+          
+        </div>
+      </div>
+    <div id="loading">
+        <img id="loading-image" src="1.gif" alt="Loading..." />
+        </div>
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1> Welcome to Kumar's Store</h1>      
+    <p>Serving the best since 1990.</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Kumar's Store</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="/">Products</a></li>
+        <li><a href="/Admin">Add New Item</a></li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/Admin"><span class="glyphicon glyphicon-user"></span> Admin</a></li>
+        <li><a href="/cart" ><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container" >    
+  <div class="row" id ="cont">
+    
+  </div>
+</div><br>
+
+<br><br>
+
+<footer class="container-fluid text-center">
+  <p>Online Store Copyright</p>  
+  <form class="form-inline">Get deals:
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-danger"  onclick="f()">Sign Up</button>
+  </form>
+  <script> 
+  function f()
+  { 
+    if(document.getElementsByClassName("form-control")[0].value!="")
+    alert("You have signed up");
+    else
+    alert("Please Enter Email");
+  }
+  </script>
+</footer>
+<p  id="heart">Made with <i class="fas fa-heart"></i> By Shubham Kumar</p>
+
+</body>
+</html>
